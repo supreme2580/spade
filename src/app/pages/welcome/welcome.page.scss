@@ -1,0 +1,28 @@
+.main-content{
+    height: 70%;
+}
+
+.onboarding-content{
+    height: 80%;
+}
+
+ion-content{
+    --padding-bottom: 18px;
+    --padding-end: 18px;
+    --padding-start: 18px;
+    --padding-top: 18px;
+}
+
+ion-button{
+    --height: 47px;
+    --margin-bottom: 10px;
+}
+
+.onboarding-button{
+    margin-bottom: 10px;
+    height: 47px;
+}
+
+.terms-notice{
+    font-size: 12px;
+}

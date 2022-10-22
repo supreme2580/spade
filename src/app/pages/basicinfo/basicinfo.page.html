@@ -1,0 +1,58 @@
+<ion-content>
+  <div class="onboarding-content">
+    <div class="previous-step">
+      <ion-icon *ngIf="current_step > 1" size="large" name="chevron-back-outline" (click)="goToPrevious()"></ion-icon>
+    </div>
+
+    <div *ngIf="current_step == 1" class="onboarding-step">
+      <ion-label>What's your name?</ion-label>
+      <ion-input class="short" placeholder="First name"></ion-input>
+    </div>
+
+    <div *ngIf="current_step == 2" class="onboarding-step">
+      <ion-label>What's your phone number?</ion-label>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <ion-list lines="none">
+              <ion-item class="phone-code">
+                <ion-select placeholder="+235">
+                  <ion-select-option value="+235">+235</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+          <ion-col size="8">
+            <ion-input></ion-input>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div *ngIf="current_step == 3" class="onboarding-step">
+      <ion-label>What's your email?</ion-label>
+      <ion-input class="short" placeholder="Email address"></ion-input>
+    </div>
+
+    <div *ngIf="current_step == 4" class="onboarding-step">
+      <ion-label>Where do you live?</ion-label>
+      <p><ion-icon name="location-outline"></ion-icon> Select your current location: </p>
+    </div>
+
+    <div *ngIf="current_step == 5" class="onboarding-step">
+      <ion-label>When's your birthday?</ion-label>
+      <ion-grid>
+        <ion-row>
+          <ion-col><ion-input class="short" placeholder="DD"></ion-input></ion-col>
+          <ion-col><ion-input class="short" placeholder="MM"></ion-input></ion-col>
+          <ion-col><ion-input class="short" placeholder="YYYY"></ion-input></ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+  </div>
+  
+
+  <ion-button class="onboarding-button" expand="block" (click)="goToNext()">Next</ion-button>
+
+</ion-content>
