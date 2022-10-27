@@ -13,6 +13,18 @@ const routes: Routes = [
   {
     path: 'discover',
     loadChildren: () => import('./pages/discover/discover.module').then( m => m.DiscoverPageModule)
+  },
+  {
+    path: 'bodybuild',
+    loadChildren: () => import('./pages/bodybuild/bodybuild.module').then( m => m.BodybuildPageModule)
+  },
+  {
+    path: 'relationshiptrait',
+    loadChildren: () => import('./pages/relationshiptrait/relationshiptrait.module').then( m => m.RelationshiptraitPageModule)
+  },
+  {
+    path: 'ethnicity',
+    loadChildren: () => import('./pages/ethnicity/ethnicity.module').then( m => m.EthnicityPageModule)
   }
 ];
 @NgModule({

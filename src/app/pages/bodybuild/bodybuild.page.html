@@ -1,0 +1,61 @@
+<ion-content>
+  <div class="onboarding-content">
+    <div class="previous-step">
+      <ion-icon *ngIf="current_step > 1" size="large" name="chevron-back-outline" (click)="goToPrevious()"></ion-icon>
+    </div>
+
+    <div *ngIf="current_step == 1" class="onboarding-step">
+      <ion-label>What's your height?</ion-label>
+      
+    </div>
+
+    <div *ngIf="current_step == 2" class="onboarding-step">
+      <ion-label>What's your build?</ion-label>
+      <div class="interest-picker">
+        <ion-row class="interest-row">
+          <ion-col>
+            <div class="interest-picker-item"><span>Slim</span></div>
+          </ion-col>
+          <ion-col>
+            <div class="interest-picker-item"><span>Atheltic</span></div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="interest-picker-item"><span>Husky</span></div>
+          </ion-col>
+          <ion-col>
+            <div class="interest-picker-item "><span>Brawny</span></div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+    <div *ngIf="current_step == 3" class="onboarding-step">
+      <ion-label>What build are you looking for?</ion-label>
+      <div class="interest-picker">
+        <ion-row class="interest-row">
+          <ion-col>
+            <div class="interest-picker-item"><span>Petite</span></div>
+          </ion-col>
+          <ion-col>
+            <div class="interest-picker-item"><span>Atheltic</span></div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="interest-picker-item"><span>Curvy</span></div>
+          </ion-col>
+          <ion-col>
+            <div class="interest-picker-item "><span>BBW</span></div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+  </div>
+  
+
+  <ion-button class="onboarding-button" expand="block" (click)="goToNext()">Next</ion-button>
+
+</ion-content>

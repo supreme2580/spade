@@ -10,7 +10,7 @@ const routes: Routes = [
         {
             path: '',
             loadChildren: () => import('../pages/discover/discover.module').then(m => m.DiscoverPageModule)
-        }
+        },
     ]
   }];
   @NgModule({

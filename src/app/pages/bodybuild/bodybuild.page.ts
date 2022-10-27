@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-basicinfo',
-  templateUrl: './basicinfo.page.html',
-  styleUrls: ['./basicinfo.page.scss'],
+  selector: 'app-bodybuild',
+  templateUrl: './bodybuild.page.html',
+  styleUrls: ['./bodybuild.page.scss'],
 })
-export class BasicinfoPage implements OnInit {
+export class BodybuildPage implements OnInit {
 
   current_step = 1;
 
@@ -19,7 +19,7 @@ export class BasicinfoPage implements OnInit {
     if(this.current_step < 3){
       this.current_step = this.current_step + 1;
     }else{
-      this.router.navigate(['bodybuild'])
+      this.router.navigate(['relationshiptrait'])
     }
   }
 
