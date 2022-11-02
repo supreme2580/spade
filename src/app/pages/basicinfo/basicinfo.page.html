@@ -44,7 +44,7 @@
     </div>
 
     <div *ngIf="current_step == 6" class="onboarding-step">
-      <ion-label>When’s your birthday?</ion-label>
+      <ion-label>When's your birthday?</ion-label>
       <ion-grid>
         <ion-row>
           <ion-col><ion-input class="short" placeholder="DD"></ion-input></ion-col>
@@ -59,10 +59,15 @@
       <div class="gender-picker">
         <ion-row>
           <ion-col>
-            <div class="gender-picker-item"><span>Man</span></div>
+            <div class="gender-picker-item">
+              <span>Man</span>
+            </div>
           </ion-col>
           <ion-col>
-            <div class="gender-picker-item"><span>Woman</span></div>
+            <div class="gender-picker-item">
+              <img src="assets/images/identify-woman.svg" alt="Woman">
+              <span>Woman</span>
+            </div>
           </ion-col>
           <ion-col>
             <div class="gender-picker-item"><span>Other</span></div>

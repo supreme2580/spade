@@ -16,7 +16,7 @@ export class BasicinfoPage implements OnInit {
   }
 
   goToNext(){
-    if(this.current_step < 3){
+    if(this.current_step < 8){
       this.current_step = this.current_step + 1;
     }else{
       this.router.navigate(['bodybuild'])
