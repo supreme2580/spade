@@ -36,6 +36,7 @@
 
     <div *ngIf="current_step == 4" class="onboarding-step">
       <ion-label>Where do you live?</ion-label>
+      <img src="assets/images/map.svg" alt="map-picker">
       <p><ion-icon name="location-outline"></ion-icon> Select your current location: </p>
     </div>
 
@@ -60,17 +61,21 @@
         <ion-row>
           <ion-col>
             <div class="gender-picker-item">
+              <img src="assets/images/identify-man.svg" alt="man"><br>
               <span>Man</span>
             </div>
           </ion-col>
           <ion-col>
             <div class="gender-picker-item">
-              <img src="assets/images/identify-woman.svg" alt="Woman">
+              <img src="assets/images/identify-woman.svg" alt="Woman"><br>
               <span>Woman</span>
             </div>
           </ion-col>
           <ion-col>
-            <div class="gender-picker-item"><span>Other</span></div>
+            <div class="gender-picker-item">
+              <img src="assets/images/identify-other.svg" alt="Other"><br>
+              <span>Other</span>
+            </div>
           </ion-col>
         </ion-row>
       </div>
@@ -81,18 +86,30 @@
       <div class="interest-picker">
         <ion-row class="interest-row">
           <ion-col>
-            <div class="interest-picker-item"><span>Men</span></div>
+            <div class="interest-picker-item">
+              <img src="assets/images/identify-man.svg" alt="Men"><br>
+              <span>Men</span>
+            </div>
           </ion-col>
           <ion-col>
-            <div class="interest-picker-item"><span>Women</span></div>
+            <div class="interest-picker-item">
+              <img src="assets/images/identify-woman.svg" alt="Women"><br>
+              <span>Women</span>
+            </div>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
-            <div class="interest-picker-item"><span>Friends</span></div>
+            <div class="interest-picker-item">
+              <img src="assets/images/interest-friends.svg" alt="Friends"><br>
+              <span>Friends</span>
+            </div>
           </ion-col>
           <ion-col>
-            <div class="interest-picker-item "><span>Other</span></div>
+            <div class="interest-picker-item">
+              <img src="assets/images/interest-others.svg" alt="Others"><br>
+              <span>Other</span>
+            </div>
           </ion-col>
         </ion-row>
       </div>
@@ -101,6 +118,6 @@
   </div>
   
 
-  <ion-button class="onboarding-button" expand="block" (click)="goToNext()">Next</ion-button>
+  <ion-button class="onboarding-button" expand="block" shape="round" (click)="goToNext()">Next</ion-button>
 
 </ion-content>

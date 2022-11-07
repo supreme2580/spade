@@ -9,18 +9,30 @@
       <div class="interest-picker">
         <ion-row class="interest-row">
           <ion-col>
-            <div class="interest-picker-item"><span>Leader</span></div>
+            <div class="interest-picker-item">
+              <img src="assets/images/leader.svg" alt="Leader"><br>
+              <span>Leader</span>
+            </div>
           </ion-col>
           <ion-col>
-            <div class="interest-picker-item"><span>Support</span></div>
+            <div class="interest-picker-item">
+              <img src="assets/images/supporter.svg" alt="supporter"><br>
+              <span>Supporter</span>
+            </div>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
-            <div class="interest-picker-item"><span>50/50</span></div>
+            <div class="interest-picker-item">
+              <img src="assets/images/50_50.svg" alt="50/50"><br>
+              <span>50/50</span>
+            </div>
           </ion-col>
           <ion-col>
-            <div class="interest-picker-item "><span>Mixed</span></div>
+            <div class="interest-picker-item">
+              <img src="assets/images/mixed.svg" alt="Mixed"><br>
+              <span>Mixed</span>
+            </div>
           </ion-col>
         </ion-row>
       </div>
@@ -29,6 +41,6 @@
   </div>
   
 
-  <ion-button class="onboarding-button" expand="block" (click)="goToNext()">Next</ion-button>
+  <ion-button class="onboarding-button" expand="block" shape="round" (click)="goToNext()">Next</ion-button>
 
 </ion-content>

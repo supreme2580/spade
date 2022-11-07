@@ -24,7 +24,8 @@ export class WelcomePage implements OnInit {
   }
 
   createAccount(){
-    this.create_account = true;
+    // this.create_account = true;
+    this.router.navigate(['basicinfo'])
   }
 
 }

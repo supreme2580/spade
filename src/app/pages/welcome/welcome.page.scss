@@ -20,9 +20,34 @@ ion-button{
 
 .onboarding-button{
     margin-bottom: 10px;
-    height: 47px;
+    height: 53px;
+    border-radius: 20px;
 }
 
 .terms-notice{
     font-size: 12px;
+    // text-align: center;
 }
+
+.terms-notice span{
+    color: #FF0000;
+}
+
+.login-text{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.login-text span{
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
+
+ion-checkbox::part(container) {
+    border-radius: 6px;
+    margin-right: 7px;
+  }
