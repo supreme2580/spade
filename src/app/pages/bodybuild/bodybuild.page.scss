@@ -41,6 +41,17 @@ ion-select{
     --border-color: black;
 }
 
+ion-range{
+    transform: rotate(-90deg);
+    margin-top: 100px;
+    // height: 400px;
+    -webkit-appearance: none;
+}
+// div.a {
+//     -ms-transform: rotate(-90deg); /* IE 9 */
+//     transform: rotate(-90deg);
+//   }
+
 .onboarding-step{
     text-align: center;
 }

@@ -26,6 +26,10 @@ const routes: Routes = [
             {
               path: 'ethnicity',
               loadChildren: () => import('../pages/ethnicity/ethnicity.module').then(m => m.EthnicityPageModule)
+            },
+            {
+              path: 'onboardingnav',
+              loadChildren: () => import('../pages/onboardingnav/onboardingnav.module').then(m => m.OnboardingnavPageModule)
             }
         ]
     }];

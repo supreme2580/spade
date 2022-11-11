@@ -49,30 +49,12 @@ ion-select{
     text-align: left;
 }
 .phone-input{
-    // margin-top:25px;
+    margin-top:25px;
 }
 
 .onboarding-button{
     margin-bottom: 10px;
     height: 53px;
-}
-
-.gender-picker{
-    margin-top: 50%;
-}
-
-.gender-picker .gender-picker-item{
-    padding-top: 10px;
-    max-width: 90px;
-    height: 90px;
-    border: solid 1px #B8B6B6;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    margin:auto;
-}
-
-.gender-picker .gender-picker-item img{
-    max-height: 54px;
 }
 
 .interest-picker{
@@ -84,16 +66,28 @@ ion-select{
 }
 
 .interest-picker .interest-picker-item{
-    padding-top: 10px;
-    max-width: 146px;
-    height: 137px;
+    max-width: 162px;
+    height: 214px;
     border: solid 1px #B8B6B6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin:auto;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .interest-picker-item img{
-    height: 76px;
-    margin-bottom: 16px;
+    height: 85px;
+}
+.interest-picker-item span{
+    color: #7E7E7E;
+    font-size: 12px;
+}
+.interest-picker-item h4{
+    font-size: 16px;
+}
+ion-toggle {
+    height: 14px;
+    width: 46px;
+    margin-top: 10px;
 }

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-ethnicity',
-  templateUrl: './ethnicity.page.html',
-  styleUrls: ['./ethnicity.page.scss'],
+  selector: 'app-onboardingnav',
+  templateUrl: './onboardingnav.page.html',
+  styleUrls: ['./onboardingnav.page.scss'],
 })
-export class EthnicityPage implements OnInit {
+export class OnboardingnavPage implements OnInit {
 
   current_step = 1;
 
