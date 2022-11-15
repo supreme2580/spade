@@ -1,24 +1,59 @@
 <ion-content padding="true">
-  <div *ngIf="!create_account" class="main-content">
+  <div *ngIf="!login_account" class="main-content">
     <app-homeslider></app-homeslider>
   </div>
-  <div *ngIf="create_account" class="onboarding-content">
+  <div *ngIf="login_account" class="onboarding-content">
+    <div class="previous-step">
+      <ion-icon size="large" name="chevron-back-outline" (click)="goToPrevious()"></ion-icon>
+    </div>
+    <div class="onboarding-step">
+      <h4>Welcome back!</h4>
+    </div>
+    <div class="login-form">
+      <p>Enter Details to Login</p>
+      <ion-item lines="none">
+        <ion-label>Email</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-input placeholder="Enter your email" type="email" [(ngModel)]='email' class="custom-input" (ionChange)='inputChanged($event.target.value)'></ion-input>
+      </ion-item>
+      <ion-item lines="none" class="new-form-group">
+        <ion-label>Password</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-input placeholder="Enter your password" type="{{password_input_type}}" [(ngModel)]='password' class="custom-input" (ionChange)='inputChanged($event.target.value)'></ion-input>
+        <ion-icon name="{{password_icon}}" slot="end" class="eye-icon" (click)="togglePassword()"></ion-icon>
+      </ion-item>
+      <ion-row class="login-addon">
+        <ion-col>
+          <ion-item lines="none">
+            <ion-checkbox slot="start"></ion-checkbox>
+          <ion-label>Remember me</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+        <ion-item lines="none">
+          <ion-label>Forgot Password?</ion-label>
+        </ion-item>
+        </ion-col>
+      </ion-row>
+    </div>
   </div>
   
-  <div *ngIf="!create_account">
+  <div *ngIf="!login_account" class="default-actions">
     <ion-button class="onboarding-button" expand="block" shape="round" (click)="createAccount()">Create account</ion-button>
     <!-- <ion-button expand="block" fill="outline" (click)="navigateToLogin()">Login</ion-button> -->
-    <p class ="login-text">Already have an account? <span (click)="navigateToLogin()">Log in</span></p>
+    <p class ="login-text">Already have an account? <span (click)="loginToAccount()">Log in</span></p>
     <!-- <p class="terms-notice">By clicking 'Create acount' or 'Log in', I state that I have read and understood the terms and conditions. </p> -->
     
     <ion-item lines="none">
-      <ion-checkbox slot="start"></ion-checkbox>
+    <ion-checkbox slot="start"></ion-checkbox>
     <ion-label class="terms-notice">I agree to the <span>terms and conditions</span> and <br><span>Privacy Policy</span>.</ion-label>
     </ion-item>
   
   </div>
-  <div *ngIf="create_account">
-    <ion-button class="onboarding-button" expand="block" (click)="proceedToOnboarding()">Next</ion-button>
+  <div *ngIf="login_account">
+    <ion-button class="onboarding-button" expand="block" shape="round" [disabled]="disable_login_account">Next</ion-button>
   </div>
   
 </ion-content>

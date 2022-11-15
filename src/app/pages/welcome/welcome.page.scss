@@ -2,9 +2,9 @@
     height: 80%;
 }
 
-.onboarding-content{
-    height: 80%;
-}
+// .onboarding-content{
+//     height: 80%;
+// }
 
 ion-content{
     --padding-bottom: 18px;
@@ -23,6 +23,55 @@ ion-button{
     height: 53px;
     border-radius: 20px;
 }
+
+.onboarding-step{
+    text-align: center;
+}
+
+.onboarding-step h4{
+    font-weight: bolder;
+}
+
+ion-input.custom-input { 
+    --background: #FAFAFA;
+    --placeholder-color: #ACACAC;
+
+    --padding-bottom: 10px;
+    --padding-end: 10px;
+    --padding-start: 25px;
+    --padding-top: 10px;
+
+    border: solid 1px #B0B0B0;
+    border-radius: 18px;
+    height: 51.75px;
+  }
+
+  .login-form p{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 44px;
+    font-size: 16px;
+  }
+
+  .new-form-group{
+    margin-top: 24px;
+  }
+
+  .login-addon{
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .login-addon ion-label{
+    font-size: 12px;
+  }
+
+  .eye-icon{
+    position: absolute;
+    right: 7px;
+    z-index: 1000;
+    font-size: 17px;
+  }
 
 .terms-notice{
     font-size: 12px;
@@ -45,7 +94,19 @@ ion-button{
     text-align: center;
 }
 
-ion-checkbox::part(container) {
+.default-actions ion-checkbox::part(container) {
     border-radius: 6px;
     margin-right: 7px;
-  }
+}
+
+.login-addon ion-checkbox{
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+}
+.login-addon ion-checkbox::part(container) {
+    border-radius: 6px;
+    margin-left: 1px;
+    width: 18px;
+    height: 18px;
+}
