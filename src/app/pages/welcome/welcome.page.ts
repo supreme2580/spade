@@ -26,15 +26,18 @@ export class WelcomePage implements OnInit {
   }
 
   proceedToOnboarding(){
-    this.router.navigate(['basicinfo'])
+    this.router.navigate(['index/basicinfo'])
   }
 
   createAccount(){
-    this.router.navigate(['basicinfo'])
+    this.router.navigate(['index/basicinfo'])
   }
 
   loginToAccount(){
     this.login_account = true;
+  }
+  login(){
+    this.router.navigate(['login'])
   }
 
   goToPrevious(){

@@ -1,8 +1,8 @@
-<ion-content padding="true">
-  <div *ngIf="!login_account" class="main-content">
+ <ion-content [fullscreen]="true">
+  <!-- <div *ngIf="!login_account" class="main-content">
     <app-homeslider></app-homeslider>
-  </div>
-  <div *ngIf="login_account" class="onboarding-content">
+  </div> -->
+  <!-- <div *ngIf="login_account" class="onboarding-content">
     <div class="previous-step">
       <ion-icon size="large" name="chevron-back-outline" (click)="goToPrevious()"></ion-icon>
     </div>
@@ -38,22 +38,37 @@
         </ion-col>
       </ion-row>
     </div>
-  </div>
-  
-  <div *ngIf="!login_account" class="default-actions">
-    <ion-button class="onboarding-button" expand="block" shape="round" (click)="createAccount()">Create account</ion-button>
-    <!-- <ion-button expand="block" fill="outline" (click)="navigateToLogin()">Login</ion-button> -->
-    <p class ="login-text">Already have an account? <span (click)="loginToAccount()">Log in</span></p>
-    <!-- <p class="terms-notice">By clicking 'Create acount' or 'Log in', I state that I have read and understood the terms and conditions. </p> -->
-    
-    <ion-item lines="none">
-    <ion-checkbox slot="start"></ion-checkbox>
-    <ion-label class="terms-notice">I agree to the <span>terms and conditions</span> and <br><span>Privacy Policy</span>.</ion-label>
-    </ion-item>
-  
-  </div>
-  <div *ngIf="login_account">
+  </div> -->
+
+  <!-- <div *ngIf="login_account">
     <ion-button class="onboarding-button" expand="block" shape="round" [disabled]="disable_login_account">Next</ion-button>
+  </div> -->
+
+  <div class="main_div">
+    <div class="df">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="logo-text">SPADE</ion-col>
+          <ion-col>
+            <img src="/assets/icon/favicon.png"  alt="">
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+      <span class="logo_under">A different experience...</span>
+    </div>
+
+
+
+
   </div>
-  
+  <div class="car">
+    <!-- <ion-button expand="block" size="large" (click)="createAccount()" >Create Account</ion-button> -->
+    <ion-button expand="block" size="large" routerLink="/reg" >Create Account</ion-button>
+
+    <ion-button expand="block" fill="outline" size="large" (click)="login()">Login</ion-button>
+
+    <p>By clicking <span class="inside_text">'Create Account</span> or <span class="inside_text">Login'</span>, I state that I have read and understood the terms and conditions.</p>
+  </div>
+
 </ion-content>

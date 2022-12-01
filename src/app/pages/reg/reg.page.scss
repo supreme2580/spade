@@ -1,0 +1,30 @@
+ion-content{
+  .main_div{
+    height: 80vh;
+    //border: 1px solid red;
+    padding: 20px 12px;
+
+    ion-row{
+      font-size: 22px;
+      font-weight: 600;
+    }
+    ion-label{
+      font-size: 18px;
+      font-weight: 500;
+    }
+    ion-item{
+      border: 1px solid #BEBEBE;
+      border-radius: 10px;
+      font-size: 18px;
+      margin: 8px 0px;
+    }
+  }
+  ion-button{
+    text-transform: capitalize;
+   --padding: 12px 0px;
+   --border-radius: 12px;
+  }
+  .btn_down{
+    padding: 12px 20px;
+  }
+}

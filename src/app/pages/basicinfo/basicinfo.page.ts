@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
 })
 export class BasicinfoPage implements OnInit {
 
-  current_step = 1;
+  current_step: any = 1;
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -19,7 +19,7 @@ export class BasicinfoPage implements OnInit {
     if(this.current_step < 8){
       this.current_step = this.current_step + 1;
     }else{
-      this.router.navigate(['bodybuild'])
+      this.router.navigate(['bodybuild']);
     }
   }
 

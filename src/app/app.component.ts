@@ -1,4 +1,6 @@
+import { Platform } from '@ionic/angular';
 import { Component } from '@angular/core';
+import { SplashScreen } from '@awesome-cordova-plugins/splash-screen/ngx';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(public splashScreen: SplashScreen, public plt: Platform) {
+    this.plt.ready().then(()=>{
+      this.splashScreen.hide();
+    });
+  }
 }

@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
 })
 export class RelationshiptraitPage implements OnInit {
 
-  current_step = 1;
-  
+  current_step:any = 1;
+
   constructor(private router:Router) { }
 
   ngOnInit() {
