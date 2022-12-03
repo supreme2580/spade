@@ -1,6 +1,9 @@
 ion-content{
   .main_div{
-    height: 80vh;
+    min-height: 80vh;
+max-height: 80vh;
+overflow-y: auto;
+    height:80vh;
     //border: 1px solid red;
     padding: 20px 12px;
 
@@ -24,7 +27,59 @@ ion-content{
    --padding: 12px 0px;
    --border-radius: 12px;
   }
+  .select_yt{
+    outline: none;
+    background: white;
+    font-weight: 200;
+    width: 100%;
+    border: 1px solid #BEBEBE;
+    border-radius: 10px;
+    height: 48px;
+    margin-top: 10px;
+    font-size: 14px;
+    padding:8px;
+  }
   .btn_down{
     padding: 12px 20px;
+// height: 20vh;
+  }
+  .main-co{
+    width: 100%;
+    // border:1px black solid;
+padding: 10px 4px;
+margin: 6px 0px;
+display: flex;
+    .row{
+      // border:1px black solid;
+      width: 95%;
+    }
+  }
+  .hidebx{
+display: none;
+  }
+  .lbl-chk{
+    text-align: center;
+    box-shadow: 0px 4px 12px -4px rgba( 0,0,0,0.35);
+    padding: 8px;
+    color: #0e0d30;
+    border-radius: 10px;
+    border: 1px solid #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    transition: all 0.3s ease-in;
+    p{
+      height: 10px;
+      padding: 8px;
+
+  
+    }
+  }
+
+  input[type=radio]:checked + .lbl-chk{
+    border-color: #BEBEBE;
+    background-color: #BEBEBE;
+    color: #ffff;
   }
 }

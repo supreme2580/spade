@@ -23,9 +23,13 @@ current: any = 1;
     }else if(this.current === 3){
       this.current = 4
     }else if(this.current === 4){
-      this.current = 1
+      this.current = 5
     }else if(this.current === 5){
       this.current = 6
+    }else if(this.current === 6){
+      this.current = 7
+    }else if(this.current === 7){
+      this.current = 1
     }
   }
 
@@ -41,7 +45,12 @@ current: any = 1;
       this.current = 3
     }else if(this.current === 5){
       this.current = 4
+    }else if(this.current === 6){
+      this.current = 5
+    }else if(this.current === 7){
+      this.current = 6
     }
+
   }
 
 }
